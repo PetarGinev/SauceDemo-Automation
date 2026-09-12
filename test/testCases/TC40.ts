@@ -10,7 +10,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Fleece Jacket'];
  * page (after having already visited the cart) is reflected correctly
  * when returning to the cart: only the remaining product is listed.
  */
-export async function TC40(page: Page): Promise<void> {
+export async function TC40(page: Page) {
   await login(page);
 
   await addProductsToCart(page, PRODUCTS);

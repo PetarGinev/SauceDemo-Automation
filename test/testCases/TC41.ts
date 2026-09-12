@@ -10,7 +10,7 @@ const PRODUCT_NAME = 'Sauce Labs Backpack';
  * "Last Name is required" validation error and keeps the user on the
  * same page.
  */
-export async function TC41(page: Page): Promise<void> {
+export async function TC41(page: Page) {
   await login(page);
 
   await addProductToCart(page, PRODUCT_NAME);

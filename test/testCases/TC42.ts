@@ -10,7 +10,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Bike Light'];
  * total that equals subtotal + tax (regardless of which products were
  * added, so the assertion stays correct if SauceDemo's tax rate changes).
  */
-export async function TC42(page: Page): Promise<void> {
+export async function TC42(page: Page) {
   await login(page);
 
   await addProductsToCart(page, PRODUCTS);

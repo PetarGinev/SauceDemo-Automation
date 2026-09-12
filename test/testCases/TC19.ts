@@ -11,7 +11,7 @@ import {
  * TC19 - Inventory page displays all six products with name, price and image
  * after a standard user logs in.
  */
-export async function TC19(page: Page): Promise<void> {
+export async function TC19(page: Page) {
   await login(page);
 
   await expect(page).toHaveURL(/inventory\.html/);

@@ -15,7 +15,7 @@ const PRODUCT_NAME = 'Sauce Labs Backpack';
  * TC45 - After completing an order, clicking "Back Home" on the checkout
  * complete page returns the user to the (now empty) inventory page.
  */
-export async function TC45(page: Page): Promise<void> {
+export async function TC45(page: Page) {
   await login(page);
 
   await addProductToCart(page, PRODUCT_NAME);

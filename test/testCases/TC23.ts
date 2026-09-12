@@ -9,7 +9,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Bolt T-Shirt'];
  * TC23 - Products added on the inventory page appear correctly on the cart
  * page, with the right names and item count.
  */
-export async function TC23(page: Page): Promise<void> {
+export async function TC23(page: Page) {
   await login(page);
 
   for (const product of PRODUCTS) {

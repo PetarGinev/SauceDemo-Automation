@@ -9,7 +9,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Onesie'];
  * TC38 - Each line item on the cart page shows a quantity of 1 and its
  * price carries over unchanged from the inventory page.
  */
-export async function TC38(page: Page): Promise<void> {
+export async function TC38(page: Page) {
   await login(page);
 
   const inventoryPrices = await getProductPrices(page);

@@ -9,7 +9,7 @@ const PRODUCT_NAME = 'Sauce Labs Bolt T-Shirt';
  * TC39 - Items added to the cart persist after navigating from cart back
  * to inventory (via "Continue Shopping") and back to the cart again.
  */
-export async function TC39(page: Page): Promise<void> {
+export async function TC39(page: Page) {
   await login(page);
 
   await addProductToCart(page, PRODUCT_NAME);

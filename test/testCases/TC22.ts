@@ -14,7 +14,7 @@ const PRODUCT_NAME = 'Sauce Labs Bike Light';
  * button updates the cart badge count back down and restores the
  * "Add to cart" button.
  */
-export async function TC22(page: Page): Promise<void> {
+export async function TC22(page: Page) {
   await login(page);
 
   await addProductToCart(page, PRODUCT_NAME);

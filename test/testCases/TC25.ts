@@ -7,7 +7,7 @@ import { continueShopping } from '../helpers/cart';
  * TC25 - The "Continue Shopping" button on the cart page navigates the user
  * back to the inventory page without altering the cart contents.
  */
-export async function TC25(page: Page): Promise<void> {
+export async function TC25(page: Page) {
   await login(page);
 
   await goToCart(page);

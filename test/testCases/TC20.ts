@@ -6,7 +6,7 @@ import { sortProductsBy, getProductPrices, SORT_DROPDOWN } from '../helpers/inve
  * TC20 - Sorting products by "Price (low to high)" reorders the inventory
  * list so that prices are in strictly ascending order.
  */
-export async function TC20(page: Page): Promise<void> {
+export async function TC20(page: Page) {
   await login(page);
 
   await sortProductsBy(page, 'lohi');

@@ -9,7 +9,7 @@ const PRODUCT_NAME = 'Sauce Labs Backpack';
  * TC27 - Submitting valid first name, last name and postal code on
  * checkout step one navigates the user to checkout step two (overview).
  */
-export async function TC27(page: Page): Promise<void> {
+export async function TC27(page: Page) {
   await login(page);
 
   await addProductToCart(page, PRODUCT_NAME);

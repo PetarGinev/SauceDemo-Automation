@@ -9,7 +9,7 @@ const PRODUCT_NAME = 'Sauce Labs Bike Light';
  * detail page showing the matching title, and "Back to products" returns
  * to the inventory page.
  */
-export async function TC35(page: Page): Promise<void> {
+export async function TC35(page: Page) {
   await login(page);
 
   await openProductDetails(page, PRODUCT_NAME);

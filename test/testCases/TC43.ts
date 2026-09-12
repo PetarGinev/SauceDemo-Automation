@@ -9,7 +9,7 @@ const PRODUCT_NAME = 'Sauce Labs Backpack';
  * TC43 - Clicking "Cancel" on checkout step one returns the user to the
  * cart page without submitting any checkout information.
  */
-export async function TC43(page: Page): Promise<void> {
+export async function TC43(page: Page) {
   await login(page);
 
   await addProductToCart(page, PRODUCT_NAME);

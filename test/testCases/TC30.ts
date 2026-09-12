@@ -16,7 +16,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Bike Light'];
  * information, review the order and finish, ending on the confirmation
  * page with an empty cart.
  */
-export async function TC30(page: Page): Promise<void> {
+export async function TC30(page: Page) {
   await login(page);
 
   for (const product of PRODUCTS) {

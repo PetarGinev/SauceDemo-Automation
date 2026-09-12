@@ -9,7 +9,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Bike Light'];
  * TC37 - Removing every item from the cart page, one by one, leaves the
  * cart empty with no line items and a zeroed badge count.
  */
-export async function TC37(page: Page): Promise<void> {
+export async function TC37(page: Page) {
   await login(page);
 
   await addProductsToCart(page, PRODUCTS);

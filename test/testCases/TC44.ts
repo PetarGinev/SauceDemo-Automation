@@ -14,7 +14,7 @@ const PRODUCT_NAME = 'Sauce Labs Backpack';
  * TC44 - Clicking "Cancel" on the checkout overview (step two) page
  * returns the user to the inventory page without completing the order.
  */
-export async function TC44(page: Page): Promise<void> {
+export async function TC44(page: Page) {
   await login(page);
 
   await addProductToCart(page, PRODUCT_NAME);

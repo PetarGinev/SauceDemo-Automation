@@ -6,7 +6,7 @@ import { sortProductsBy, getProductNames, SORT_DROPDOWN } from '../helpers/inven
  * TC33 - Sorting products by "Name (Z to A)" reorders the inventory list
  * into reverse alphabetical order.
  */
-export async function TC33(page: Page): Promise<void> {
+export async function TC33(page: Page) {
   await login(page);
 
   await sortProductsBy(page, 'za');

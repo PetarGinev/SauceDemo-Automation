@@ -8,7 +8,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bo
  * TC34 - Adding several products to the cart in sequence accumulates the
  * cart badge count correctly (one increment per product).
  */
-export async function TC34(page: Page): Promise<void> {
+export async function TC34(page: Page) {
   await login(page);
 
   expect(await getCartBadgeCount(page)).toBe(0);

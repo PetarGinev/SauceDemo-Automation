@@ -7,7 +7,7 @@ import { getProductNames, SORT_DROPDOWN } from '../helpers/inventory';
  * user first lands on it after login, and products are alphabetically
  * ordered accordingly.
  */
-export async function TC31(page: Page): Promise<void> {
+export async function TC31(page: Page) {
   await login(page);
 
   await expect(page.locator(SORT_DROPDOWN)).toHaveValue('az');

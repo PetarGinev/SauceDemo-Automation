@@ -9,7 +9,7 @@ const PRODUCTS = ['Sauce Labs Backpack', 'Sauce Labs Fleece Jacket'];
  * TC36 - The cart badge count on the inventory page matches the number of
  * line items actually rendered on the cart page.
  */
-export async function TC36(page: Page): Promise<void> {
+export async function TC36(page: Page) {
   await login(page);
 
   await addProductsToCart(page, PRODUCTS);
