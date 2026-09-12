@@ -25,10 +25,7 @@ import {
 */
 
 export default async function (page: Page) {
-    // 1
-    await page.goto('/');
-
-    // 2 3
+    // 1 2 3
     await page.fill(ID_USERNAME, STANDARD_USERNAME);
 
     // 4

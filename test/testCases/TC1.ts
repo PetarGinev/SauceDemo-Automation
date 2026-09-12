@@ -16,9 +16,6 @@ import { login } from "../helpers/login";
 */
 
 export default async function (page: Page) {
-    // 1
-    await page.goto('/');
-
-    // 2-4
+    // 1-4
     await login(page);
 }

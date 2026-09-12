@@ -16,10 +16,7 @@ import {ID_PASSWORD, STANDARD_PASSWORD } from "../helpers/login";
 */
 
 export default async function (page: Page) {
-    // 1
-    await page.goto('/');
-
-    // 2 3
+    // 1 2 3
     await page.fill(ID_PASSWORD, STANDARD_PASSWORD);
 
     // 4

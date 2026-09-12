@@ -50,10 +50,8 @@ export default async function (page: Page) {
             expectedError: null
         }
     ];
-    // 1
-    await page.goto('/');
 
-    // 2 3 4 5
+    // 1 2 3 4 5
     for (const user of loginUsers) {
         await page.fill(login.ID_USERNAME, user.username);
         await page.fill(login.ID_PASSWORD, login.STANDARD_PASSWORD);

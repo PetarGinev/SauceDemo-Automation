@@ -60,8 +60,6 @@ export default async function (page: Page) {
         },
     ];
 
-    await page.goto("/");
-
     // 1-6
     for (const user of loginScenarios) {
         if (isUserLoggedIn) {

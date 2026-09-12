@@ -29,10 +29,8 @@ export default async function (page: Page) {
         login.ERROR_USER,
         login.VISUAL_USER
     ];
-    // 1
-    await page.goto('/');
 
-    // 2
+    // 1 2
     for (const element of loginElements) {
         await expect(page.locator(element)).toBeEnabled();
         await expect(page.locator(element)).toBeVisible();

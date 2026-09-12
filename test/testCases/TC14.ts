@@ -20,10 +20,7 @@ import { ID_USERNAME, ID_PASSWORD, login, logout } from "../helpers/login";
 */
 
 export default async function (page: Page) {
-    // 1
-    await page.goto('/');
-
-    // 2 3 4 5
+    // 1 2 3 4 5
     await login(page);
     await logout(page);
 

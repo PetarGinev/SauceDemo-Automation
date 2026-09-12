@@ -22,10 +22,7 @@ import { CART_CONTENTS_CONTAINER, CONTINUE_SHOPPING_BTN } from "../helpers/cart"
 */
 
 export default async function (page: Page) {
-    // 1
-    await page.goto('/');
-
-    // 2 3 4
+    // 1 2 3 4
     await login(page);
 
     // 5

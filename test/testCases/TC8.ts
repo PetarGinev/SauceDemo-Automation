@@ -22,10 +22,7 @@ import {
 */
 
 export default async function (page: Page) {
-    // 1
-    await page.goto('/');
-
-    // 2 3 4
+    // 1 2 3 4
     await page.locator(ID_LOGIN_BTN).click();
 
     await expect(page).toHaveURL("/");
