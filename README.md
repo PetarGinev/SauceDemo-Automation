@@ -37,9 +37,12 @@ SauceDemo-Automation/
 │   │   ├── TC1.ts
 │   │   ├── TC2.ts
 │   │   ├── ...
-│   │   └── TC18.ts
+│   │   └── TC45.ts
 │   │
-│   └── login.spec.ts
+│   ├── cart.spec.ts
+│   ├── checkout.spec.ts
+|   ├── inventory.spec.ts
+|   └── login.spec.ts
 │
 ├── .env
 ├── .gitignore
@@ -52,6 +55,9 @@ SauceDemo-Automation/
 
 ### Structure overview
 
+**`test/cart.spec.ts`**
+**`test/checkout.spec.ts`**
+**`test/inventory.spec.ts`**
 **`test/login.spec.ts`**
 
 Main Playwright test file that defines and executes the test scenarios.
@@ -62,7 +68,7 @@ Contains individual test case implementations. Each test case is kept isolated i
 
 **`test/helpers/`**
 
-Contains reusable functionality shared between test cases, such as login, inventory and cart operations.
+Contains reusable functionality shared between test cases, such as login, inventory, cart and checkout operations.
 
 **`.github/workflows/`**
 
@@ -72,30 +78,7 @@ Contains the GitHub Actions workflow used to execute the automated test suite in
 
 ## Test Coverage
 
-The current automation suite focuses primarily on **Login and Authentication** functionality.
-
-### Authentication & Login
-
-The suite currently covers:
-
-* Successful login with valid credentials
-* Login using the `Enter` key
-* Invalid username
-* Invalid password
-* Invalid username and password
-* Empty username
-* Empty password
-* Empty username and password
-* Username case sensitivity
-* Password case sensitivity
-* Password field masking
-* Login page UI elements
-* Login behavior for predefined users
-* Logout and redirection to the Login page
-* Successful login after an unsuccessful login attempt
-* Authentication persistence after page refresh
-* Authentication persistence while navigating between application pages
-* Protected Inventory route access without authentication
+The automation suite focuses on **login, inventory, cart and checkout** functionalities.
 
 This provides coverage of both **positive and negative authentication scenarios**, as well as authentication state and protected-route behavior.
 
@@ -211,6 +194,9 @@ npx playwright test --headed
 ### Run a specific test file
 
 ```bash
+npx playwright test test/cart.spec.ts
+npx playwright test test/checkout.spec.ts
+npx playwright test test/inventory.spec.ts
 npx playwright test test/login.spec.ts
 ```
 
@@ -288,24 +274,7 @@ The main goals of this project are:
 
 ---
 
-## Future Improvements
-
-Potential future improvements include:
-
-* Expanding Inventory test coverage
-* Expanding Cart test coverage
-* Adding Checkout test coverage
-* Increasing reusable Page Object coverage where appropriate
-* Improving test data management
-* Adding more cross-browser execution
-* Adding additional CI checks
-* Improving test reporting and failure diagnostics
-
----
-
 ## Project Status
-
-The framework is actively being developed and extended with additional functional scenarios.
 
 The current focus is on building a clean foundation for scalable UI automation while maintaining readable and independent test cases.
 
